@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(46, 85%, 48%);
+    display: flex;
+    overflow: hidden;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    overflow: hidden;
+}
+#part2{
+    height: 100%;
+    width: 68%;
+    background-image: url("make\ HTML\ alpha\ 0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(80, 42, 124);
+    overflow: hidden;
+}
+
+#part3{
+    height: 100%;
+    width: 8%;
+    overflow: hidden;
+ 
+}
+#text-div{
+    height: auto;
+    position: absolute;
+    width: auto;
+   
+    left: 7%;
+    top:50%;
+    transform: translate(0,-50%);
+ 
+}
+#text-div h1{
+    font-size: 95px;
+    letter-spacing: 8px;
+    font-family: monument;
+    font-weight:800;
+    line-height: 78px;
+    color: rgb(243, 147, 2);
+    text-transform: uppercase;
+
+}
+#small-image-div{
+    height: 400px;
+    width: 300px;
+    background-image: url("A\ letter\ tech\ logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 26%;
+    right: 5%;
+    overflow: hidden;
+
+
+}
+#vertical-text {
+    position: absolute;
+    transform: rotate(90deg);
+    right:-19.6%;
+    top: 45%;
+    animation: textreload 1s infinite linear alternate-reverse;
+ 
+} 
+@keyframes textreload {
+    0%{
+        margin-top: 1%;
+        transform: translateY(100px);
+        transform: rotate(90deg);
+    }
+    
+    100%{
+        margin-top:2.4%;
+        transform: translateY(0);
+        transform: rotate(90deg);
+
+    }
+
+}
+
+
+.maingola{
+    display: flex;
+    padding: 10px;
+    /* border-bottom: 5px solid black; */
+}
+
+@keyframes slideleft {
+    
+}
+.gola{
+    height: 50px;
+    width: 50px;
+    border: 3px dashed #336be6;
+    border-radius: 50%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate  4s linear infinite;
+}
+.gola font{
+    position: fixed;
+
+}
+@keyframes rotate {
+    0%{
+        border-color: yellow;
+    }
+    25%{
+        border-color: blueviolet;
+    }
+    50%{
+        border-color: black;
+    }
+    75%{
+        border-color: aqua;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+#vertical-text h1{
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    color: transparent;
+    font-family: monument;
+    text-transform: uppercase;
+    -webkit-text-stroke-width:2px ;
+    -webkit-text-stroke-color:#336be6;
+    overflow: hidden;
+}
